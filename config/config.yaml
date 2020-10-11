@@ -1,0 +1,11 @@
+name: goweb
+httpPort: :3000
+redis:
+  - name: master
+    addrs:
+      - 127.0.0.1:6379
+    password:
+mongo:
+  - name: master
+    addr: mongodb://127.0.0.1:51802,127.0.0.1:51803,127.0.0.1:51804/schedule?replicaSet=rs0&readPreference=primaryPreferred
+    database: test
